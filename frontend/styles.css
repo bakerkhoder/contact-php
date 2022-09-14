@@ -1,0 +1,315 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color:rgb(64, 170, 147) ;
+}
+img {
+    height: 100%;
+}
+/* navv bar  */
+.top-nav{
+
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: rgb(39, 74, 85);
+    width: 100%;
+    position: fixed;
+    padding: 15px;
+}
+.logo{
+    display: none;
+}
+.top-nav>h1{
+ color: white;
+ padding-top: 30px;
+}
+
+.fa-bars{
+    margin: 5px 5px;
+    width: 40px;
+}
+.links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 25%;
+
+}
+
+.links > li{
+    padding-left: 50px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+a>li{
+    color: white;
+    width: 100px;
+}
+
+
+/* main */
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(64, 170, 147);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.main>h1{
+ 
+ font-size: 57px;
+
+}
+
+/* bdd fundations */
+
+.portfolio{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color:white;
+}
+.portfolio > h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+
+}
+
+.portfolio-first-part{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    background-color:white;
+
+}
+
+.larg-card {
+
+    align-items: center;
+}
+.end{
+    color:white;
+    background-color: rgb(39, 74, 85);
+}
+.end>.card{
+ background-color: rgb(39, 74, 85);
+}
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 250px;
+    background-color: white;
+    margin: 20px;
+    height: 295px;
+    border-radius: 10px;
+
+
+}
+.card>img{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+
+
+
+
+.large-card {
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.large-card>img {
+    width: 130px;
+    height: 80px;
+
+
+}
+.avatar{
+   width: 20%;
+}
+.start-design{
+        
+      
+        width: 50px;
+        max-width: 7rem;
+        height: 0.25rem;
+        background-color: white;
+        border-radius: 1rem;
+        border-color: #2c3e50;
+        margin: 15px;
+        
+    
+}
+#textalert{
+    width: fit-content;
+    color: black;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px ;
+}
+.displaynone{
+    display: none;
+}
+.contact>label{
+    align-self: flex-start;
+}
+textarea{
+        font-size: 1.5rem;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-radius: 0;
+            border-width: 1px;
+}
+.start>img{
+    width: 50px;
+   
+}
+.start{
+    align-items: baseline;
+    display: flex;
+    margin-bottom: 20px;
+}
+/* About freelancer*/
+.about{ padding: 5% 15%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(64, 170, 147);
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+.about>*{
+    margin-top: 100px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+}
+.about-content>*{
+    margin-left: 5%;
+}
+.download-button{
+    border: 2px solid white;
+    border-radius: 5px;
+    width:100px;
+}
+/*contact us field*/
+.contact{
+    padding: 5% 15%;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: rgba(136, 136, 121, 0.1);
+        flex-direction: column;
+        align-items: center;
+
+}
+.contact>* {
+    margin-top: 15%;
+}
+.contact>:last-child {
+    margin-top: 2%;
+    align-self: flex-start;
+}
+.contact>input{
+    font-size: 1.5rem;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 0;
+    border-width: 1px;
+    width: 100%;
+}
+.send-button{
+    background-color: rgb(64, 170, 147);
+    border-radius: 5px;
+    padding: 20%;
+    color: white;
+    width: 100px;
+}
+span{
+    color: rgb(64, 170, 147);
+}
+.conc{
+    color:#2c3e50 ;
+}
+
+/*copyright*/
+.copyrights{
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(25, 37, 51);
+    color:white;
+}
+
+.dispaly{
+    display: block;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+        flex-direction: column;
+    }
+    .logo{
+        display: block;
+    }
+    .links{
+        margin-top: 100px;
+    }
+    .bdd-propreties>img{
+        width: 0px;
+    }
+    .list-containers>ul{
+        width: 60%;
+        margin: 20px 20px;
+    }
+   
+    .links{
+        display: none;
+    }
+   
+}
