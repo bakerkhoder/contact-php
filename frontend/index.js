@@ -9,9 +9,9 @@ const message=document.querySelector("textarea").value
 
 
 function addcontacts(name,email,number,message){
-  fetch(`http://localhost/start-bootstrap/addcontact.php`,{
+  fetch(`http://localhost/php-contact/backend/addcontact.php`,{
     method:'POST',
-    body:new URLSearchParams({"name":name},{"email":email},{"number":number},{"message":message}),
+    body:new URLSearchParams({"name":name,"email":email,"number":number,"message":message}),
   }).then(response =>{response.json()
   console.log(response)})
   .then(data=>console.log(data))

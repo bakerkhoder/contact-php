@@ -1,6 +1,8 @@
 <?php  
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: *');
 include("connection.php");
-$query=$mysqli->prepare("SELECT name FROM contacts");
+$query=$mysqli->prepare("SELECT message FROM contacts");
 $query->execute();
 $array=$query->get_result();
 $response=[];
