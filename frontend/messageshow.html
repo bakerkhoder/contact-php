@@ -11,12 +11,15 @@
 
 
     <script>
-        var messages=fetch("http://localhost/php-contact/backend/contacts.php")
-        .then(response => {
-                response.json()
-                console.log(response)
-            })
-        .then(data => console.log(data))
+
+
+fetch('http://localhost/php-contact/backend/contacts.php')
+
+  .then((response) => response.json())
+  .then((data) => data.forEach(message=>console.log(message)))
+      
+      
+         
     </script>
 </body>
 </html>
