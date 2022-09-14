@@ -284,6 +284,27 @@ span{
 
 
 
+/*message page*/
+.main-message {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.message-card{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 250px;
+    background-color: rgb(196, 189, 189);
+    margin: 20px;
+    padding: 20px;
+    height: 370px;
+    border-radius: 10px;
+}
 
 
 

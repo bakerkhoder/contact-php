@@ -9,6 +9,17 @@
 <body>
     
 
+   <section class="main-message">
+      
+   </section>
+
+
+
+
+
+
+
+
 
     <script>
 
@@ -16,7 +27,14 @@
 fetch('http://localhost/php-contact/backend/contacts.php')
 
   .then((response) => response.json())
-  .then((data) => data.forEach(message=>console.log(message)))
+  .then((data) => {data.forEach((message)=>{
+    console.log(message)
+     var main = document.querySelector(".main-message")
+     var card = document.createElement("div")
+     main.appendChild(card)
+     card.innerHTML = message.message
+     card.classList.add("message-card")
+})})
       
       
          
